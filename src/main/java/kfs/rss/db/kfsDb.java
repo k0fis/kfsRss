@@ -98,7 +98,7 @@ public class kfsDb extends kfsADb {
     }
 
     public int feedSetRefreshed(dbFeed.pojo pj) throws kfsExRssDb {
-        pj.nowRefreshedDate();
+        pj.setNowRefreshedDate();
         try {
             return super.update(feed, pj.kfsGetRow());
         } catch (SQLException ex) {

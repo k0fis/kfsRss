@@ -4,8 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import kfs.kfsDbi.*;
 
 /**
@@ -15,28 +13,26 @@ import kfs.kfsDbi.*;
 public class dbMsg extends kfsDbObject {
 
     // id, Fid
-    private final kfsIntAutoInc id;
+    private final kfsLongAutoInc id;
     private final kfsInt fid;
     private final kfsString title;
     private final kfsString description;
     private final kfsString link;
-    private final kfsString author;
     private final kfsString guid;
     private final kfsDate importDate;
 
     dbMsg(kfsDbServerType st) {
         super(st, "T_KFS_MSG");
         int pos = 0;
-        id = new kfsIntAutoInc("ID", "MID", pos++);
+        id = new kfsLongAutoInc("ID", pos++);
         fid = new kfsInt("FID", "FID", kfsIntAutoInc.idMaxLen, pos++, false);
         title = new kfsString("C_TITLE", "Title", 2048, pos++);
         description = new kfsString("C_DESC", "Description", 2048, pos++);
         link = new kfsString("C_LINK", "Link", 2048, pos++);
-        author = new kfsString("C_AUTHOR", "Author", 2048, pos++);
         guid = new kfsString("G_GUID", "Guid", 2048, pos++);
         importDate = new kfsDate("IMPORT_DATE", "Import Date", pos++);
 
-        setColumns(id, fid, title, description, link, author, guid, importDate);
+        setColumns(id, fid, title, description, link, guid, importDate);
     }
     
     public void setGuid(String p_guid, int p_fid, kfsRowData rd){

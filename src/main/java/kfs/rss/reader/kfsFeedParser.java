@@ -21,6 +21,7 @@ public class kfsFeedParser {
     static final String LINK = "link";
     static final String ITEM = "item";
     static final String GUID = "guid";
+    static final String URL = "url";
 
     public static kfsFeed readFeed(String url) throws IOException {
         try {
@@ -30,7 +31,7 @@ public class kfsFeedParser {
         }
     }
 
-    public static kfsFeed readFeed(URL url) throws IOException {
+    public static kfsFeed readFeed(URL iurl) throws IOException {
         kfsFeed feed = null;
         try {
             boolean isFeedHeader = true;
@@ -39,22 +40,23 @@ public class kfsFeedParser {
             String title = "";
             String link = "";
             String guid = "";
+            String url = "";
 
             // First create a new XMLInputFactory
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             // Setup a new eventReader
 
-            InputStream in = url.openStream();
+            InputStream in = iurl.openStream();
             XMLEventReader eventReader = inputFactory.createXMLEventReader(in);
             // read the XML document
             while (eventReader.hasNext()) {
                 XMLEvent event = eventReader.nextEvent();
                 if (event.isStartElement()) {
-                    String localPart = event.asStartElement().getName().getLocalPart();
+                    String localPart = event.asStartElement().getName().getLocalPart().toLowerCase();
                     if (localPart.equals(ITEM)) {
                         if (isFeedHeader) {
                             isFeedHeader = false;
-                            feed = new kfsFeed(title, link, description);
+                            feed = new kfsFeed(title, link, description, url);
                         }
                     }
                     if (localPart.equals(TITLE)) {
@@ -68,6 +70,9 @@ public class kfsFeedParser {
                     }
                     if (localPart.equals(GUID)) {
                         guid = getCharacterData(event, eventReader);
+                    }
+                    if (localPart.equals(URL)) {
+                        url = getCharacterData(event, eventReader);
                     }
                 } else if (event.isEndElement()) {
                     if (event.asEndElement().getName().getLocalPart().equals(ITEM)) {

@@ -1,6 +1,7 @@
 package kfs.rss.reader;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -9,21 +10,23 @@ import java.util.List;
  */
 public class kfsFeed {
 
-    final String title;
-    final String link;
-    final String description;
-    final List<kfsMessage> entries = new ArrayList<kfsMessage>();
+    private final String title;
+    private final String link;
+    private final String description;
+    private final String imageUrl;
+    private final List<kfsMessage> entries = new ArrayList<kfsMessage>();
 
-    public kfsFeed(String title, String link, String description) {
+    public kfsFeed(String title, String link, String description, String imageUrl) {
         this.title = title;
         this.link = link;
         this.description = description;
+        this.imageUrl = imageUrl;
     }
 
     public void addMessage(kfsMessage msg) {
         entries.add(msg);
     }
-    
+
     public List<kfsMessage> getMessages() {
         return entries;
     }
@@ -40,8 +43,13 @@ public class kfsFeed {
         return description;
     }
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+    
     @Override
     public String toString() {
-        return "FEED {description=" + description+ ", link=" + link + ", title=" + title+"}" ;
+        return Arrays.toString(new Object[]{"FEED {description", description, "link", link,
+            "title", title, "IMG", imageUrl, "}"});
     }
 }
