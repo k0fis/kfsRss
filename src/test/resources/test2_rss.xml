@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<?xml-stylesheet type="text/css" href="rss.css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>kofis.eu</title>
+  <language>en</language>
+  <link>http://kofis.eu</link>
+  <description>kofis.eu</description>
+  <atom:link href="http://kofis.eu/rss.xml" rel="self" type="application/rss+xml" />
+  <docs>http://backend.userland.com/rss</docs>
+  <category>photo,java</category>
+  <image>
+   <url>http://kofis.eu/icon.png</url>
+   <title>kofis.eu</title>
+   <link>http://kofis.eu</link>
+  </image>
+
+    <item>
+      <title>Turecko 2013 - video</title>
+      <link>http://kofis.eu/p_2013_09_04/video.html</link>
+      <guid>http://kofis.eu/p_2013_09_04/video.html</guid>
+      <description>Videa z Turecka</description>
+      <pubDate>Thu, 12 Sep 2013 13:34:33 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Turecko 2013</title>
+      <link>http://kofis.eu/p_2013_09_04</link>
+      <guid>http://kofis.eu/p_2013_09_04</guid>
+      <description>Fotky z Turecka</description>
+      <pubDate>Thu, 12 Sep 2013 13:09:31 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Balony Bouzov</title>
+      <link>http://kofis.eu/p_2012_08_25_Bouzov</link>
+      <guid>http://kofis.eu/p_2012_08_25_Bouzov</guid>
+      <description>Fotky Bouzova</description>
+      <pubDate>Sun, 26 Aug 2012 13:27:21 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Graz</title>
+      <link>http://kofis.eu/p_2012_07_06/</link>
+      <guid>http://kofis.eu/p_2012_07_06/</guid>
+      <description>Fotky z dovolene - Graz</description>
+      <pubDate>Mon, 23 Jul 2012 07:58:43 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Tučepi</title>
+      <link>http://kofis.eu/p_2012_07_08/</link>
+      <guid>http://kofis.eu/p_2012_07_08/</guid>
+      <description>Fotky z dovolene - Tucepi</description>
+      <pubDate>Mon, 23 Jul 2012 07:57:43 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Tapolca</title>
+      <link>http://kofis.eu/p_2012_07_16/</link>
+      <guid>http://kofis.eu/p_2012_07_16/</guid>
+      <description>Fotky z dovolene - Tapolca</description>
+      <pubDate>Mon, 23 Jul 2012 07:55:43 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Výstava orchideí Brno</title>
+      <link>http://kofis.eu/p_2012_03_10/</link>
+      <guid>http://kofis.eu/p_2012_03_10/</guid>
+      <description>Výstava orchideí Brno</description>
+      <pubDate>Sun, 25 Mar 2012 20:08:04 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Expozice času</title>
+      <link>http://kofis.eu/p_2012_03_25/</link>
+      <guid>http://kofis.eu/p_2012_03_25/</guid>
+      <description>Expozice Času</description>
+      <pubDate>Sun, 25 Mar 2012 15:08:06 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Punkevni jeskyne</title>
+      <link>http://kofis.eu/p_2011_06_19/</link>
+      <guid>http://kofis.eu/p_2011_06_19/</guid>
+      <description>Punkevni jeskyne</description>
+      <pubDate>Sun, 19 Jun 2011 18:58:53 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Karlova Studanka</title>
+      <link>http://kofis.eu/p_2011_03_12/</link>
+      <guid>http://kofis.eu/p_2011_03_12/</guid>
+      <description>
+      Karlova Studanka
+      </description>
+      <pubDate>Sun, 13 Mar 2011 10:50:44 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Resaky</title>
+      <link>http://kofis.eu/p_2011_02_12/</link>
+      <guid>http://kofis.eu/p_2011_02_12/</guid>
+      <description>
+      Ledova vyprava
+      </description>
+      <pubDate>Sun, 13 Feb 2011 11:23:30 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Wien</title>
+      <link>http://kofis.eu/p_2010_10_30_1/</link>
+      <guid>http://kofis.eu/p_2010_10_30_1/</guid>
+      <description>
+      Fotky z Vidne
+      </description>
+      <pubDate>Sat, 6 Nov 2010 14:20:03 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Mikulov</title>
+      <link>http://kofis.eu/p_2010_10_29_1/</link>
+      <guid>http://kofis.eu/p_2010_10_29_1/</guid>
+      <description>
+      Fotky z Mikulova
+      </description>
+      <pubDate>Sat, 6 Nov 2010 14:19:01 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Arboretum Bila Lhota - photo selection</title>
+      <link>http://kofis.eu/p_2010_10_10_p/</link>
+      <guid>http://kofis.eu/p_2010_10_10_p/</guid>
+      <description>
+      Fotky z Arboreta, upraveny pro vyvolani
+      </description>
+      <pubDate>Tue, 12 Oct 2010 19:15:55 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Arboretum Bila Lhota</title>
+      <link>http://kofis.eu/p_2010_10_10/</link>
+      <guid>http://kofis.eu/p_2010_10_10/</guid>
+      <description>
+      Fotky z Arboreta
+      </description>
+      <pubDate>Sun, 10 Oct 2010 11:34:02 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Velké Pavlovice 2010-07</title>
+      <link>http://kofis.eu/p_2010_07_11/</link>
+      <guid>http://kofis.eu/p_2010_07_11/</guid>
+      <description>
+      Fotky z výletů a okolé Velkých Pavlovic. Až se aklimatuzuju,
+      tak možná doplním drobnější komenáře k fotkám.
+      </description>
+      <pubDate>Mon, 12 Jul 2010 08:38:58 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>skoroNoveAuto</title>
+      <link>http://kofis.eu/#skoroNoveAuto</link>
+      <guid>http://kofis.eu/#skoroNoveAuto</guid>
+      <description>
+      Jsem se byl podivat v cisteauto.eu  a mam zase skoronovy auto
+      </description>
+      <pubDate>Wed, 30 Jun 2010 13:55:16 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Tapolca 2010-05</title>
+      <link>http://kofis.eu/p_2010_05_15/</link>
+      <guid>http://kofis.eu/p_2010_05_15/</guid>
+      <description>
+      Tanslajtanice - tapolca
+      </description>
+      <pubDate>Wed, 19 May 2010 05:30:02 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Fata morgana</title>
+      <link>http://kofis.eu/p_2010_04_22/</link>
+      <guid>http://kofis.eu/p_2010_04_22/</guid>
+      <description>
+      Prague butterfly - fata morgana
+      </description>
+      <pubDate>Mon, 26 Apr 2010 05:29:56 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Lipnik</title>
+      <link>http://kofis.eu/p_2009_05_16/</link>
+      <guid>http://kofis.eu/p_2009_05_16/</guid>
+      <description>
+      Cache's in lipnik and little around
+      </description>
+      <pubDate>Sat, 16 May 2009 20:44:19 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Maďarsko - Květen 2009</title>
+      <link>http://kofis.eu/p_2009_05_08/</link>
+      <guid>http://kofis.eu/p_2009_05_08/</guid>
+      <description>Spa and GC Trip in Hungary, Balaton/Kezstely/Heviz region.
+      Travelogue is in the international czech language.
+      Photos are general language - JPG ;-)
+      </description>
+      <pubDate>Tue, 12 May 2009 10:37:19 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>Highway, photo</title>
+      <link>http://kofis.eu/p_2008_12_03/index.html</link>
+      <guid>http://kofis.eu/p_2008_12_03/index.html</guid>
+      <description>photos</description>
+      <pubDate>Wed, 3 Dec 2008 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>orchid - camera test, photo</title>
+      <link>http://kofis.eu/p_2008_12_16/index.html</link>
+      <guid>http://kofis.eu/p_2008_12_16/index.html</guid>
+      <description>test camera on my Penelope</description>
+      <pubDate>Tue, 16 Dec 2008 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>before xmas, photo</title>
+      <link>http://kofis.eu/p_2008_12_23/index.html</link>
+      <guid>http://kofis.eu/p_2008_12_23/index.html</guid>
+      <description>preparing xmass dinner</description>
+      <pubDate>Tue, 23 Dec 2008 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>orchid, photos</title>
+      <link>http://kofis.eu/p_2009_01_01/index.html</link>
+      <guid>http://kofis.eu/p_2009_01_01/index.html</guid>
+      <description>photos of granny flowers</description>
+      <pubDate>Thu, 1 Jan 2009 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>coffee in russian bar, photos</title>
+      <link>http://kofis.eu/p_2009_01_03/index.html</link>
+      <guid>http://kofis.eu/p_2009_01_03/index.html</guid>
+      <description>photos in russian bar</description>
+      <pubDate>Sat, 3 Jan 2009 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>add information of my GNU project, projects</title>
+      <link>http://kofis.eu/index.html#projects</link>
+      <guid>http://kofis.eu/index.html#projects</guid>
+      <description>my projects</description>
+      <pubDate>Mon, 19 Jan 2009 16:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Improve web by the rss channel, web</title>
+      <link>http://kofis.eu/index.html#rss</link>
+      <guid>http://kofis.eu/index.html#rss</guid>
+      <description>add this rss channel</description>
+      <pubDate>Mon, 19 Jan 2009 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>New mountain photos - ramzova</title>
+      <link>http://kofis.eu/p_2009_01_17/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_01_17/index.html#img</guid>
+      <description>Pictures from skiing center Ramzova</description>
+      <pubDate>Sat, 17 Jan 2009 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>New mountain photos - Sindleruv Mlyn</title>
+      <link>http://kofis.eu/p_2009_01_22/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_01_22/index.html#img</guid>
+      <description>Pictures from skiing center Spindleruv Mlyn</description>
+      <pubDate>Thu, 22 Jan 2009 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>New czech calendar for March</title>
+      <link>http://kofis.eu/index.html#calendar</link>
+      <guid>http://kofis.eu/index.html#calendar</guid>
+      <description>Photo monthly czech calendar</description>
+      <pubDate>Thu, 19 Feb 2009 14:32:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>I'm bilionare</title>
+      <link>http://kofis.eu/p_2009_02_19_bilionare/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_02_19_bilionare/index.html#img</guid>
+      <description>I'm 10bilionare, but only in zimbabwe.</description>
+      <pubDate>Thu, 19 Feb 2009 14:34:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Rimice-Menik - galery</title>
+      <link>http://kofis.eu/p_2009_04_26_1/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_04_26_1/index.html#img</guid>
+      <description>Cyclo trip - today morning</description>
+      <pubDate>Thu, 19 Feb 2009 14:22:01 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Pod Tremsinem</title>
+      <link>http://kofis.eu/p_2009_04_26_2/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_04_26_2/index.html#img</guid>
+      <description>Cyclo trip - today morning</description>
+      <pubDate>Thu, 19 Feb 2009 14:22:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>Rimicke vyveracky</title>
+      <link>http://kofis.eu/p_2009_04_26_3/index.html#img</link>
+      <guid>http://kofis.eu/p_2009_04_26_3/index.html#img</guid>
+      <description>Cyclo trip - today morning</description>
+      <pubDate>Thu, 19 Feb 2009 14:22:03 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>

@@ -1,0 +1,116 @@
+package kfs.rss.db;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import kfs.kfsDbi.*;
+
+/**
+ *
+ * @author pavedrim
+ */
+public class dbFeed extends kfsDbObject {
+
+    public kfsIntAutoInc id;
+    public kfsString url;
+    public kfsString desc;
+    public kfsString categ;
+    public kfsDate refreshDate;
+
+    dbFeed(kfsDbServerType st) {
+        super(st, "T_KFS_FEED");
+        int pos = 0;
+        id = new kfsIntAutoInc("C_ID", "ID", pos++);
+        url = new kfsString("C_URL", "URL", 2048, pos++);
+        desc = new kfsString("C_DESC", "Description", 2048, pos++);
+        categ = new kfsString("C_CATEG", "Category", 32, pos++);
+        refreshDate = new kfsDate("REFRESH_DATE", "Refresh Date", pos++);
+
+        super.setColumns(id, url, desc, categ, refreshDate);
+        super.setIdsColumns(id);
+        super.setUpdateColumns(desc, categ, refreshDate);
+    }
+
+    void setUrl(String pUrl, kfsRowData rd) {
+        url.setData(pUrl, rd);
+    } 
+    
+    public String sqlFeedByUrl() {
+        if (serverType == kfsDbServerType.kfsDbiPostgre) {
+            return getSelect("get_feed(?)", getColumns(), null, false);
+        } else {
+            return getSelect(getName(), getColumns(), url);
+        }
+    }
+    
+    public void psFeedByUrl(PreparedStatement ps, String pUrl) throws SQLException {
+        ps.setString(1, pUrl);
+    }
+
+    @Override
+    public String[] getCreateTableAddons() {
+        ArrayList<String> ret = new ArrayList<String>(Arrays.asList(super.getCreateTableAddons()));
+        ret.add("CREATE UNIQUE INDEX IU_" + getName() + "_1 ON " + getName() + " ( " + url.getColumnName() + ")");
+        if (serverType == kfsDbServerType.kfsDbiPostgre) {
+            String s;
+            try {
+                s = kfsDb.readResource("/sql/pg_feed.sql");
+            } catch (kfsExRssDb ex) {
+                s = null;
+            }
+            if ((s != null) && (s.length() > 0)) {
+                ret.add(s);
+            }
+        }
+        return ret.toArray(new String[ret.size()]);
+    }
+    
+    @Override
+    public pojo getPojo(kfsRowData row) {
+        return new pojo(row);
+    }
+
+    public class pojo extends kfsPojoObj<dbFeed> {
+
+        pojo(kfsRowData rd) {
+            super(dbFeed.this, rd);
+        }
+
+        public int getId() {
+            return inx.id.getData(rd);
+        }
+
+        public String getUrl() {
+            return inx.url.getData(rd);
+        }
+
+        public String getDescription() {
+            return inx.desc.getData(rd);
+        }
+
+        public void setDescription(String descript) {
+            inx.desc.setData(descript, rd);
+        }
+        
+        public String getCategory() {
+            return inx.categ.getData(rd);
+        }
+        
+        public void setCategory(String category) {
+            inx.categ.setData(category, rd);
+        }
+        
+        public Date getRefreshedDate() {
+            return inx.refreshDate.getData(rd);
+        }
+        
+        public void setRefreshedDate(Date date) {
+            inx.refreshDate.setData(date, rd);
+        }
+        public void nowRefreshedDate() {
+            inx.refreshDate.setData(new Date(), rd);
+        }
+    }
+}
